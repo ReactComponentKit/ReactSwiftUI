@@ -7,7 +7,7 @@
 	<img src="https://img.shields.io/badge/OSX-%3E%3D%2010.15-green.svg" />
 	<img src="https://img.shields.io/badge/Swift-%3E%3D%205.0-orange.svg" />
 	<img src="https://img.shields.io/cocoapods/v/ReactSwiftUI.svg" />
-	<img src="https://img.shields.io/github/license/ReactSwiftUI/ReactSwiftUI.svg" />
+	<img src="https://img.shields.io/github/license/ReactComponentKit/ReactComponentKit.svg" />
 </div>
 
 # ReactSwiftUI
