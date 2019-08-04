@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "ReactSwiftUI"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "ReactSwiftUI is a library for managing SwiftUI's view state like as the Redux or Flux."
   s.homepage     = "https://github.com/ReactComponentKit/ReactSwiftUI"
   s.license      = "MIT"
