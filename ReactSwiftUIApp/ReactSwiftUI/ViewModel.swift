@@ -13,7 +13,7 @@ import RxCocoa
 import SwiftUI
 import Combine
 
-open class ViewModel<S: State>: BindableObject {
+open class ViewModel<S: State> {
     
     // rx port
     private let rx_action = BehaviorRelay<Action>(value: VoidAction())
@@ -24,9 +24,7 @@ open class ViewModel<S: State>: BindableObject {
     private var nextAction: Action? = nil
     private var applyNewState: Bool = false
     private var actionQueue = Queue<(Action, Bool)>()
-    
-    public let didChange = PassthroughSubject<Void, Never>()
-    
+        
     public init() {
         setupRxStream()
     }

@@ -14,7 +14,7 @@ struct ContentState: State {
     var error: (Error, Action)? = nil
 }
 
-class ContentViewModel: ViewModel<ContentState> {
+class ContentViewModel: ViewModel<ContentState>, ObservableObject {
     override init() {
         super.init()
         
@@ -24,14 +24,11 @@ class ContentViewModel: ViewModel<ContentState> {
         )
     }
     
-    private(set) var count: Int = 0 {
-        didSet {
-            didChange.send(())
-        }
-    }
+    @Published
+    var count: Int = 0
     
     override func on(newState: ContentState) {
-        count = newState.count
+        self.count = newState.count
     }
     
     override func on(error: Error, action: Action) {
